@@ -49,7 +49,7 @@ You will need to place the code above in each area of your theme where you wish 
 
 == Installation ==
 
-1. Upload `custom-user-profile-photo` folder to the `/wp-content/plugins/` directory
+1. Upload `exchange-custom-user-profile-photo` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Place `<?php get_cupp_meta($user_id, $size); ?>` in your templates
 

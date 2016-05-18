@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-SearchPath-0: ../../plugins/custom-user-profile-photo\n"
+"X-Poedit-SearchPath-0: ../../plugins/exchange-custom-user-profile-photo\n"
 "X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
 
 #: ../3five_cupp.php:80 ../3five_cupp.php:114

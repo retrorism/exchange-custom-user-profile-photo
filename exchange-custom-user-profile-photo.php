@@ -50,8 +50,8 @@ Version: 0.4
 add_action( 'admin_enqueue_scripts', 'cupp_enqueue_scripts_styles' );
 function cupp_enqueue_scripts_styles() {
     // Register
-    wp_register_style( 'cupp_admin_css', plugins_url( 'custom-user-profile-photo/css/styles.css' ), false, '1.0.0', 'all' );
-    wp_register_script( 'cupp_admin_js', plugins_url( 'custom-user-profile-photo/js/scripts.js' ), array('jquery'), '1.0.0', true );
+    wp_register_style( 'cupp_admin_css', plugins_url( 'exchange-custom-user-profile-photo/css/styles.css' ), false, '1.0.0', 'all' );
+    wp_register_script( 'cupp_admin_js', plugins_url( 'exchange-custom-user-profile-photo/js/scripts.js' ), array('jquery'), '1.0.0', true );
 
     // Enqueue
     wp_enqueue_style( 'cupp_admin_css' );
@@ -80,12 +80,12 @@ function cupp_profile_img_fields( $user ) {
     ?>
 
     <div id="cupp_container">
-    <h3><?php _e( 'Custom User Profile Photo', 'custom-user-profile-photo' ); ?></h3>
+    <h3><?php _e( 'Custom User Profile Photo', 'exchange-custom-user-profile-photo' ); ?></h3>
 
     <table class="form-table">
 
         <tr>
-            <th><label for="cupp_meta"><?php _e( 'Profile Photo', 'custom-user-profile-photo' ); ?></label></th>
+            <th><label for="cupp_meta"><?php _e( 'Profile Photo', 'exchange-custom-user-profile-photo' ); ?></label></th>
             <td>
                 <!-- Outputs the image after save -->
                 <div id="current_img">
@@ -101,7 +101,7 @@ function cupp_profile_img_fields( $user ) {
                             <a class="remove_img"><span>Remove</span></a>
                         </div>
                     <?php else : ?>
-                        <img src="<?php echo plugins_url( 'custom-user-profile-photo/img/placeholder.gif' ); ?>" class="cupp-current-img placeholder">
+                        <img src="<?php echo plugins_url( 'exchange-custom-user-profile-photo/img/placeholder.gif' ); ?>" class="cupp-current-img placeholder">
                     <?php endif; ?>
                 </div>
 
@@ -115,18 +115,18 @@ function cupp_profile_img_fields( $user ) {
 
                 <!-- Hold the value here if this is a WPMU image -->
                 <div id="cupp_upload">
-                    <input type="hidden" name="cupp_placeholder_meta" id="cupp_placeholder_meta" value="<?php echo plugins_url( 'custom-user-profile-photo/img/placeholder.gif' ); ?>" class="hidden" />
+                    <input type="hidden" name="cupp_placeholder_meta" id="cupp_placeholder_meta" value="<?php echo plugins_url( 'exchange-custom-user-profile-photo/img/placeholder.gif' ); ?>" class="hidden" />
                     <input type="hidden" name="cupp_upload_meta" id="cupp_upload_meta" value="<?php echo esc_url_raw( $cupp_upload_url ); ?>" class="hidden" />
                     <input type="hidden" name="cupp_upload_edit_meta" id="cupp_upload_edit_meta" value="<?php echo esc_url_raw( $cupp_upload_edit_url ); ?>" class="hidden" />
-                    <input type='button' class="cupp_wpmu_button button-primary" value="<?php _e( $btn_text, 'custom-user-profile-photo' ); ?>" id="uploadimage"/><br />
+                    <input type='button' class="cupp_wpmu_button button-primary" value="<?php _e( $btn_text, 'exchange-custom-user-profile-photo' ); ?>" id="uploadimage"/><br />
                 </div>
                 <!-- Outputs the text field and displays the URL of the image retrieved by the media uploader -->
                 <div id="cupp_external">
                     <input type="text" name="cupp_meta" id="cupp_meta" value="<?php echo esc_url_raw( $cupp_url ); ?>" class="regular-text" />
                 </div>
                 <!-- Outputs the save button -->
-                <span class="description"><?php _e( 'Upload a custom photo for your user profile or use a URL to a pre-existing photo.', 'custom-user-profile-photo' ); ?></span>
-                <p class="description"><?php _e('Update Profile to save your changes.', 'custom-user-profile-photo'); ?></p>
+                <span class="description"><?php _e( 'Upload a custom photo for your user profile or use a URL to a pre-existing photo.', 'exchange-custom-user-profile-photo' ); ?></span>
+                <p class="description"><?php _e('Update Profile to save your changes.', 'exchange-custom-user-profile-photo'); ?></p>
             </td>
         </tr>
 
