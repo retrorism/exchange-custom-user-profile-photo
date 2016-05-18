@@ -1,0 +1,22 @@
+{
+    "name": "retrorism/exchange-custom-user-profile-photo",
+    "description": "Plugin for custom user photos created by the talented folks of 3five.com, edited to fix a small mistake.",
+    "authors":  [
+      {
+        "name": "3five, ",
+        "email": "hello@3five.com",
+        "homepage": "http://www.3five.com"
+      },
+      {
+        "name": "Vincent Listrani",
+        "email": "vincent@3five.com",
+        "homepage": "https://github.com/Vinsanity"
+      }
+    ],
+    "type": "wordpress-plugin",
+    "source": {
+        "url": "https://github.com/retrorism/exchange-custom-user-profile-photo.git",
+        "type": "git",
+        "reference": "master"
+    }
+}
