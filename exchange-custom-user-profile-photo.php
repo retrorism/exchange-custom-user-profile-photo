@@ -1,20 +1,20 @@
 <?php
-/*
-Plugin Name: Exchange Custom User Profile Photo
-Plugin URI: http://3five.com
-Description: [Contains small edit for the Exchange Plugin] A simple and effective custom WordPress user profile photo plugin. This plugin leverages the WordPress Media Uploader functionality. To use this plugin go to the users tab and select a user. The new field can be found below the password fields for that user.
-Author: 3five
-Author URI: http://3five.com
-Text Domain: exchange-custom-user-profile-photo
-Domain Path: /languages/
-Version: 0.4
-*/
+/**
+ * Plugin Name: Exchange Custom User Profile Photo
+ * Plugin URI: http://3five.com
+ * Description: A simple and effective custom WordPress user profile photo plugin. Based upon the plugin by 3five: contains fix for the Exchange Plugin/Theme project.
+ * Author: 3five
+ * Author URI: http://3five.com
+ * Text Domain: exchange-custom-user-profile-photo
+ * Domain Path: /languages/
+ * Version: 0.4
+ **/
 
 /**
  * This program has been developed for use with the WordPress Software.
  *
  * It is distributed as free software with the intent that it will be
- * usefull and does not ship with any WARRANTY.
+ * useful and does not ship with any WARRANTY.
  *
  * USAGE
  * // Default:
